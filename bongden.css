@@ -1,0 +1,33 @@
+body{
+    background-color: black;
+}
+.bong{
+    margin:auto;
+    display: block;
+text-align: center;
+}
+.knot{
+    display: flex;
+    justify-content: space-around;
+   
+}
+.btn{
+display: inline-block;
+border: none;
+background: transparent;
+text-decoration: none;
+cursor: pointer;
+border-radius: 50px;
+padding : 12px;
+min-height: 12px;
+transition: opacity 0.2 ease    ;
+}
+.btn:hover{
+    opacity: 0.6;
+}
+.knot :first-child{
+    background-color: rgb(6, 231, 44);
+}
+.knot :nth-child(2){
+    background-color: brown;
+}

@@ -1,0 +1,41 @@
+.btn{
+    display: inline-block;
+     /* thẻ div nó tự xuống dòng  */
+     text-decoration: none;
+     /* bỏ dòng kẻ của thẻ a */
+     background-color: transparent;
+     border: none;
+     outline: none;
+     /* bỏ backgroud và boder của thẻ button */
+     padding: 12px 48px;
+     border-radius: 50px ;
+     cursor:pointer;
+     /* khi đưa vào nút nó hiện bàn tày sài cusor giống như hover */
+     transition: opacity 0.2s ease ;
+     /* thuộc tính thay đổi theo keyframe, 0.2s là thời gian hiệu ứng ease là kiểu hiệu ứng
+     kiểu như nó hover kiểu như thế nào nhưng chúng ta cần phải tạo keyframe */
+
+}
+.btn:hover{
+    opacity: 0.6;
+    /* khi rê chuột vào nút nó giảm màu xuống 0.6  */
+}
+.btn + .btn {
+    margin-left: 16px;
+    /* nếu nó là nút thì nó tự cách ra trừ thằng đầu tiên */
+}
+.btn--success{
+background-color: rgb(36, 223, 83);
+}
+.btn--warn{
+background-color: rgb(240, 161, 13);
+}
+.btn--danger{
+background-color: rgb(235, 12, 12);
+}
+.btn--dissabled{
+opacity: 0.5 !important;
+/* khi nó có modifier success mà có thêm disabled thì cái disbled nó mạnh hơn */
+cursor: default;
+/* cái cursor nay đưa về mặc định nhằm cho nó đẹp k làm xấu web */
+}

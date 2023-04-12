@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency conversion</title>
+</head>
+<body>
+<div>
+    <table>
+        <caption>Currency converstion</caption>
+    <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td> <input type="text" id="Amount"></td>
+        <td> 
+            <select id="From" >
+                <option value="VND">VND</option>
+                <option value="USD">USD</option>
+            </select>
+        </td>
+        <td>
+            <select id="To"> 
+                <option value="VND">VND</option>
+                <option value="USD">USD</option>
+            </select>
+        </td>
+        <td><button onclick="changemoney()" >Convers</button></td>
+    </tr>
+    </table>
+    <p id="Result"></p>
+
+</div>
+</body>
+
+</html>
+<script src="./baitapjs.js"></script>
