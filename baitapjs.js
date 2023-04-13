@@ -10,7 +10,7 @@ function changemoney(){
     Result = "Result" + (Amount / 23000) + "$";   
  }
  else if(FromC == "VND"){
-    Result = "Result: " + Amount + " VND";
+   =  Result "Result: " + Amount + " VND";
  }
  else {
     Result = "Result: " + Amount + " USD";
