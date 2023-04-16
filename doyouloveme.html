@@ -17,6 +17,9 @@
         alert ('tôi cũng yêu bạn ')
     }
     function no() {
-      alert('hơi buồn đấy')
+        var x = Math.round(Math.random() * window.innerWidth);
+        var y = Math.round(Math.random() * window.innerHeight);
+        document.getElementById('bntno').style.left = x + "px";
+        document.getElementById('btnno').style.right = y + "px";
     }
 </script>
