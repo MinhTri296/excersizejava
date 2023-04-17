@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="richsmar.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOOD-CHEAP-FAST</title>
+</head>
+
+<body>
+    <di class="container">
+        <div>
+            <input type="checkbox"><span>GOOD</span>
+        </div>
+        <div>
+            <input type="checkbox"><span>CHEAP</span>
+        </div>
+        <div>
+            <input type="checkbox"><span>FAST</span>
+        </div>
+    </di>
+</body>
+
+</html>
+<script>
+    let buttonAll = document.querySelectorAll("input");/*khaib báo biến buttonAll đưa input về các mảng array*/
+    buttonAll.forEach((btn,index) => {
+        btn.addEventlistener("click", function(){
+            if(btn.checked){
+                switch(index){
+                    case 0:
+                        if(buttonAll[1].checked && buttonAll[2].checked ){
+                            buttonAll[2].checked = false;
+                        }
+                        break;
+                        case 1:
+                        if(buttonAll[0].checked && buttonAll[2].checked ){
+                            buttonAll[0].checked = false;
+                        }
+                        break;
+                        case 2:
+                        if(buttonAll[0].checked && buttonAll[1].checked ){
+                            buttonAll[1].checked = false;
+                        }
+                        break;
+                }
+                }
+                
+
+            })
+        })        
+
+</script>

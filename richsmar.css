@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: aliceblue;
+}
+.container {
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    height: 100vh;
+    justify-content: center;
+    margin-left: 50% ;
+}
+.container div {
+    padding-bottom: 30px;
+}
+
+input[type="checkbox"] {
+    position: relative;/* vị trí các phần tử định vị dựa trên vị trí ban đầu của nó*/
+    width: 80px;
+    height: 40px;
+    appearance: none ; /*vỏ bề ngoài cho về 0*/
+    background-color: antiquewhite;
+    outline: none;/* ẩn khung*/
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px rgba(15, 5, 5, 0.5);/* inset là đổ bóng bên trong*/
+    transition: 0.75s;
+}
+input:checked[type="checkbox"]{
+    background-color: rgb(56, 56, 240);
+}
+input[type="checkbox"]::before {
+    content: "";
+    position: absolute;/* ví trí tyệt đối định vị được bằng width height*/
+    width: 40px;
+    height: 40px;
+    transition: 0.75s;
+    background-color: rgb(253, 254, 255);
+    border-radius: 25px;
+    transform: scale(1,1);   /*phóng to kích thước so với định dạng ban đầu 1width và 1heighr */
+}
+input:checked[type="checkbox"]::before { /* khi kích vào nó sẽ như thế nào bì fo nhé*/
+    left: 40px;
+}
+.container span {
+    font-weight: bold; /* độ dày của chữ*/
+    position: absolute;
+    margin-left: 20px;
+    
+}
