@@ -11,11 +11,58 @@
 </body>
 </html>
 <script>
-    let a = parseInt(prompt('Nhập số a'));
-    let b =parseInt(prompt('Nhập số b'));
-    if( a % b ==0) {
-        alert(a+ " chia hết cho "+ b);
-    }else {
-        alert(a + " không chia hết " + b);
-    }
+    // let a = parseInt(prompt('Nhập số a'));
+    // let b =parseInt(prompt('Nhập số b'));
+    // if( a % b ==0) {
+    //     alert(a+ " chia hết cho "+ b);
+    // }else {
+    //     alert(a + " không chia hết " + b);
+    // }
+    // bài toán kiểm tra số tuổi
+    // let a = prompt('Nhập số tuổi')
+    // if(a <= 0){
+    //     alert('Nhập lại');
+    // }else if ( a > 0 && a < 15 ) {
+    //     alert('chưa đủ tuổi vào học lớp 10');
+    // } else {
+    //     alert("đủ tuổi vào học");
+    // }
+    // kiểm tra số nguyên bất kì
+    // let a = prompt('Nhập vào số nguyên bất kì');
+    // if (a > 0 ) {
+    //     alert( a + 'lớn hơn 0')
+    // }else {
+    //     alert('Nhập lại')
+    // }
+    //  let a = prompt("Nhập số thứ nhất")
+    //  let b = prompt("Nhập số thứ hai")
+    //  let c = prompt("Nhập số thứ ba")
+    //  let solonnhat ;
+    //  solonnhat = a;
+    //  if (solonnhat < b ){
+    //     solonnhat = b;
+    //  }if(solonnhat < c ) { 
+    //     solonnhat = c ;
+    //  }
+    //  alert("số lớn nhất là : " + solonnhat);
+
+//    bài 5 xếp hạng học lực
+
+let kiemtra = parseInt(prompt('Nhập điểm kiểm tra'))
+let diemgiuaki = parseInt(prompt('Nhập điểm giữa kì'))
+let diemcuoiki =parseInt(prompt('Nhập điểm cuối kì'))
+let diemtrungbinh = (kiemtra + diemcuoiki + diemgiuaki)/3
+if(diemtrungbinh < 3 && diemtrungbinh >=0  ){
+    alert("Học lực kém")
+}else if( diemtrungbinh > 3 && diemtrungbinh <= 5){
+    alert("Học lực yếu")
+}else if(diemtrungbinh >5 && diemtrungbinh <= 7){
+    alert("Học lực trung bình")
+}else if(diemtrungbinh > 7 && diemtrungbinh < 8){
+    alert("Học lực khá")
+}else if(diemtrungbinh > 8 && diemtrungbinh <= 10 ) {
+    alert( "Học lực giỏi")
+}else {
+    alert ("Không hợp lệ")
+}
 </script>
